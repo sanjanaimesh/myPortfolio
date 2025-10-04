@@ -99,20 +99,20 @@ const About = () => {
                 {stats.map((stat, index) => (
                   <div
                     key={index}
-                    className="group relative p-6 bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-xl rounded-2xl border border-gray-700/50 hover:border-gray-600 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-1 overflow-hidden"
+                    className="group relative p-4 sm:p-6 bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-xl rounded-2xl border border-gray-700/50 hover:border-gray-600 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-1 overflow-hidden"
                   >
                     {/* Gradient overlay */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${stat.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
                     
-                    <div className="relative space-y-3">
+                    <div className="relative space-y-2 sm:space-y-3">
                       <div className={`inline-flex p-2.5 bg-gradient-to-br ${stat.gradient} rounded-lg shadow-lg`}>
                         <div className="text-white">
                           {stat.icon}
                         </div>
                       </div>
                       <div>
-                        <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                        <div className="text-sm text-gray-400">{stat.label}</div>
+                        <div className="text-2xl sm:text-3xl font-bold text-white mb-1">{stat.value}</div>
+                        <div className="text-xs sm:text-sm text-gray-400 break-words">{stat.label}</div>
                       </div>
                     </div>
                   </div>

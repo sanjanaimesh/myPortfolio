@@ -12,7 +12,7 @@ const Projects = () => {
       description: "A modern agriculture-focused web platform designed for farmers and agents. It allows farmers to purchase seed varieties online and connect with agents directly for better collaboration. Built with a full-stack approach using React and MySQL, focusing on scalability and usability.",
       image: bestway,
       technologies: ["React", "Node.js", "MySQL", "Express", "Tailwind CSS"],
-      githubLink: "https://github.com",
+      githubLink: "https://github.com/sanjanaimesh/BestWayAgriculture",
       date: "2025",
       gradient: "from-green-500 to-emerald-400"
     },
